@@ -7,8 +7,8 @@
     <ProjectGuid>{74418C83-603D-4C39-A83F-F892F8987027}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LiveSplit.ManualText</RootNamespace>
-    <AssemblyName>LiveSplit.ManualText</AssemblyName>
+    <RootNamespace>LiveSplit.RuntimeText</RootNamespace>
+    <AssemblyName>LiveSplit.RuntimeText</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -47,13 +47,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FontTextComponent.cs" />
-    <Compile Include="ManualTextComponent.cs" />
-    <Compile Include="ManualTextFactory.cs" />
-    <Compile Include="ManualTextSettings.cs">
+    <Compile Include="RuntimelTextComponent.cs" />
+    <Compile Include="RuntimeTextFactory.cs" />
+    <Compile Include="RuntimeTextSettings.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ManualTextSettings.Designer.cs">
-      <DependentUpon>ManualTextSettings.cs</DependentUpon>
+    <Compile Include="RuntimeTextSettings.Designer.cs">
+      <DependentUpon>RuntimeTextSettings.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

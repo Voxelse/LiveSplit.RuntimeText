@@ -2,7 +2,7 @@
 <updates>
   <update version="1.0.0">
     <files>
-      <file path="Components/LiveSplit.ManualText.dll" status="changed"/>
+      <file path="Components/LiveSplit.RuntimeText.dll" status="changed"/>
     </files>
     <changelog>
       <change>Initial Release</change>

@@ -1,10 +1,10 @@
 ﻿using System.Reflection;
 using System.Runtime.InteropServices;
-[assembly: AssemblyTitle("LiveSplit.ManualText")]
+[assembly: AssemblyTitle("LiveSplit.RuntimeText")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("LiveSplit.ManualText")]
+[assembly: AssemblyProduct("LiveSplit.RuntimeText")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]

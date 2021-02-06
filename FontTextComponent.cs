@@ -1,10 +1,10 @@
 ﻿using LiveSplit.UI;
 
-namespace LiveSplit.ManualText {
+namespace LiveSplit.RuntimeText {
     public class FontTextComponent : UI.Components.InfoTextComponent {
-        public ManualTextSettings Settings { get; set; }
+        public RuntimeTextSettings Settings { get; set; }
 
-        public FontTextComponent(ManualTextSettings settings): base("", "") {
+        public FontTextComponent(RuntimeTextSettings settings): base("", "") {
             Settings = settings;
         }
 

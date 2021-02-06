@@ -7,10 +7,10 @@ using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 using System.Xml;
 
-namespace LiveSplit.ManualText {
-    public class ManualTextComponent : UI.Components.IComponent {
+namespace LiveSplit.RuntimeText {
+    public class RuntimeTextComponent : UI.Components.IComponent {
         protected FontTextComponent InternalComponent { get; set; }
-        public ManualTextSettings Settings { get; set; }
+        public RuntimeTextSettings Settings { get; set; }
 
         public float PaddingTop => InternalComponent.PaddingTop;
         public float PaddingLeft => InternalComponent.PaddingLeft;
@@ -34,8 +34,8 @@ namespace LiveSplit.ManualText {
             set => Settings.Text2 = value;
         }
 
-        public ManualTextComponent(LiveSplitState state, string componentName, string name, bool isLocked = false) {
-            Settings = new ManualTextSettings(componentName, name, isLocked) { CurrentState = state };
+        public RuntimeTextComponent(LiveSplitState state, string componentName, string name, bool isLocked = false) {
+            Settings = new RuntimeTextSettings(componentName, name, isLocked) { CurrentState = state };
             InternalComponent = new FontTextComponent(Settings);
         }
 

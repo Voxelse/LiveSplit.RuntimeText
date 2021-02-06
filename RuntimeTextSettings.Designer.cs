@@ -1,5 +1,5 @@
-﻿namespace LiveSplit.ManualText {
-    partial class ManualTextSettings {
+﻿namespace LiveSplit.RuntimeText {
+    partial class RuntimeTextSettings {
         /// <summary> 
         /// Required designer variable.
         /// </summary>
@@ -556,13 +556,13 @@
             this.chkTwoRows.Text = "Display 2 Rows";
             this.chkTwoRows.UseVisualStyleBackColor = true;
             // 
-            // ManualTextSettings
+            // RuntimeTextSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "ManualTextSettings";
+            this.Name = "RuntimeTextSettings";
             this.Padding = new System.Windows.Forms.Padding(9);
             this.Size = new System.Drawing.Size(612, 597);
             this.Load += new System.EventHandler(this.TextComponentSettings_Load);

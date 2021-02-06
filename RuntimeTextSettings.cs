@@ -5,8 +5,8 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Xml;
 
-namespace LiveSplit.ManualText {
-    public partial class ManualTextSettings : UserControl {
+namespace LiveSplit.RuntimeText {
+    public partial class RuntimeTextSettings : UserControl {
         public Color Text1Color { get; set; }
         public bool OverrideText1Color { get; set; }
         public Color Text2Color { get; set; }
@@ -39,7 +39,7 @@ namespace LiveSplit.ManualText {
 
         public LiveSplitState CurrentState { get; set; }
 
-        public ManualTextSettings(string componentName, string name, bool isLocked) {
+        public RuntimeTextSettings(string componentName, string name, bool isLocked) {
             InitializeComponent();
 
             ComponentName = componentName;
