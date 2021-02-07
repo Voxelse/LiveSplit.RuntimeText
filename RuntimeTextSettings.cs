@@ -117,6 +117,8 @@ namespace LiveSplit.RuntimeText {
 
         public void SetSettings(XmlNode node) {
             var element = (XmlElement)node;
+            Text1 = SettingsHelper.ParseString(element["Text1"]);
+            Text2 = SettingsHelper.ParseString(element["Text2"]);
             ComponentName = SettingsHelper.ParseString(element["ComponentName"]);
             Text1Color = SettingsHelper.ParseColor(element["Text1Color"]);
             Text2Color = SettingsHelper.ParseColor(element["Text2Color"]);
@@ -126,8 +128,6 @@ namespace LiveSplit.RuntimeText {
             BackgroundColor2 = SettingsHelper.ParseColor(element["BackgroundColor2"]);
             GradientString = SettingsHelper.ParseString(element["BackgroundGradient"]);
             UseText = SettingsHelper.ParseBool(element["UseText"]);
-            Text1 = SettingsHelper.ParseString(element["Text1"]);
-            Text2 = SettingsHelper.ParseString(element["Text2"]);
             Font1 = SettingsHelper.GetFontFromElement(element["Font1"]);
             Font2 = SettingsHelper.GetFontFromElement(element["Font2"]);
             OverrideFont1 = SettingsHelper.ParseBool(element["OverrideFont1"]);
@@ -137,6 +137,8 @@ namespace LiveSplit.RuntimeText {
 
         public XmlNode GetSettings(XmlDocument document) {
             var parent = document.CreateElement("Settings");
+            SettingsHelper.CreateSetting(document, parent, "Text1", Text1);
+            SettingsHelper.CreateSetting(document, parent, "Text2", Text2);
             CreateSettingsNode(document, parent);
             return parent;
         }
@@ -144,7 +146,7 @@ namespace LiveSplit.RuntimeText {
         public int GetSettingsHashCode() => CreateSettingsNode(null, null);
 
         private int CreateSettingsNode(XmlDocument document, XmlElement parent) {
-            return SettingsHelper.CreateSetting(document, parent, "Version", "1.0") ^
+            return SettingsHelper.CreateSetting(document, parent, "Version", "1.0.1") ^
             SettingsHelper.CreateSetting(document, parent, "ComponentName", ComponentName) ^
             SettingsHelper.CreateSetting(document, parent, "TextColor", Text1Color) ^
             SettingsHelper.CreateSetting(document, parent, "OverrideTextColor", OverrideText1Color) ^
@@ -154,8 +156,6 @@ namespace LiveSplit.RuntimeText {
             SettingsHelper.CreateSetting(document, parent, "BackgroundColor2", BackgroundColor2) ^
             SettingsHelper.CreateSetting(document, parent, "BackgroundGradient", BackgroundGradient) ^
             SettingsHelper.CreateSetting(document, parent, "UseText", UseText) ^
-            SettingsHelper.CreateSetting(document, parent, "Text1", Text1) ^
-            SettingsHelper.CreateSetting(document, parent, "Text2", Text2) ^
             SettingsHelper.CreateSetting(document, parent, "Font1", Font1) ^
             SettingsHelper.CreateSetting(document, parent, "Font2", Font2) ^
             SettingsHelper.CreateSetting(document, parent, "OverrideFont1", OverrideFont1) ^
