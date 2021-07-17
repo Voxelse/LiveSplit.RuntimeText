@@ -28,7 +28,7 @@ namespace LiveSplit.RuntimeText {
         public Font Font1 { get; set; }
         public string Font1String { get => String.Format("{0} {1}", Font1.FontFamily.Name, Font1.Style); }
         public bool OverrideFont1 { get; set; }
-        
+
         public string Text2 { get; set; }
         public Font Font2 { get; set; }
         public string Font2String { get => String.Format("{0} {1}", Font2.FontFamily.Name, Font2.Style); }
@@ -45,6 +45,7 @@ namespace LiveSplit.RuntimeText {
             ComponentName = componentName;
             UseText = !isLocked;
             Text1 = name;
+            Text2 = "";
 
             Text1Color = Color.FromArgb(255, 255, 255);
             OverrideText1Color = false;

@@ -1,11 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <updates>
+  <update version="1.0.2">
+    <files>
+      <file path="Components/LiveSplit.RuntimeText.dll" status="changed"/>
+    </files>
+    <changelog>
+      <change>Fixed error when value is unset</change>
+    </changelog>
+  </update>
   <update version="1.0.1">
     <files>
       <file path="Components/LiveSplit.RuntimeText.dll" status="changed"/>
     </files>
     <changelog>
-      <change>Fix HashCode</change>
+      <change>Fixed HashCode</change>
     </changelog>
   </update>
   <update version="1.0.0">

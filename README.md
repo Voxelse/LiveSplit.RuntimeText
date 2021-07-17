@@ -1,1 +1,1 @@
-# LiveSplit.ManualText
+# LiveSplit.RuntimeText
